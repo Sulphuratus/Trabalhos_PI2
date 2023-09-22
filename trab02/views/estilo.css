@@ -1,0 +1,190 @@
+/* estilo.css */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 16px 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    padding: 2em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    color: #ffffff;
+    /*background-image: url("https://www.themoviedb.org/t/p//original/56v2KjBlU4XaOv9rVYEQypROD7P.jpg");*/
+    /*background-image: url("/src/bd_st.fotoBg");*/
+}
+
+
+header .capa {
+    display: flex;
+    flex-direction: column;
+}
+
+header .capa img{
+    /*background-size:contain;*/
+    width:80%;
+    border-radius: 20px;
+}
+
+/*
+h1 {
+    font-size: larger;
+    color: blueviolet;
+}*/
+
+/*-------------------------------------*/
+/* H E A D E R */
+
+header .capa .poster {
+    display: flex;
+    flex-direction: row;
+}
+
+header .capa .poster img {
+    margin-top: 2em;
+    width: 350px;
+    border-radius: 15px;
+    /*display: block;*/
+}
+
+header .capa .poster .info {
+    margin-top: 15em;
+    display: block;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 2em;
+    max-width: 50%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+header .capa .poster .info h1 {
+    font-size: 3em;
+}
+
+header .info .generos {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+header .info p {
+    margin-top: 0.5em;
+    text-align: justify;
+}
+
+header .info .nota {
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    width: 80px;
+    height: 80px;
+    font-size: 2em;
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 50%;
+    border: 4px solid #00BB00;
+    margin-top: 0.5em;
+}
+
+/*----------------------------------*/
+/* E L E N C O */
+
+.elenco {
+    padding: 2em;
+}
+.elenco .elenco-container {
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    margin-top: 0.5em;
+}
+.elenco-container {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05), -4px -4px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+.elenco .elenco-container .ator img {
+    width: 160px;
+    display:block;
+    border-radius: 10px 10px 0 0;
+    margin: 0em 1em 0 0.5em
+}
+
+
+.elenco .elenco-container .ator .nome {
+    font-weight: 600;
+    margin: 0.75em 1em 0 1em;
+}
+.elenco .elenco-container .ator .personagem {
+    margin: 0em 1em 1.5em 1em;
+}
+
+/*-----------------------------------------------------*/
+/* T E M P O R A D A S */
+
+.temporadas {
+    padding: 2em;
+}
+.temporadas .temporadas-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5em;
+    
+}
+.temporadas .temporadas-container .temporada {
+    display: flex;
+    /*flex-direction: row;*/
+    width: 30%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05), -4px -4px 10px rgba(0, 0, 0, 0.05);
+}
+.temporadas .temporadas-container .temporada .poster img {
+    width: 350px;
+    display: block;
+    margin: 1em 2em 1em 2em;
+    border-radius: 10px;
+}
+.temporadas .temporadas-container .temporada .info {
+    padding: 1em;
+    padding-right: 2em;
+    margin: 1em 2em 1em 2em;
+    text-align: center;
+
+}
+.temporadas .temporadas-container .temporada .info h3 {
+    font-size: 1.5em;
+    /*margin-bottom: 0.2em;*/
+    margin: 0em 1em 0.2em 1em;
+
+}
+.temporadas .temporadas-container .temporada .info .subtitulo {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 0em 1em 0em 1em;
+
+}
+.temporadas .temporadas-container .temporada .info p {
+    text-align: justify;
+    /*margin-top: 1.5em;*/
+    margin: 1.5em 1em 0em 1em;
+
+}
+
+

@@ -1,0 +1,108 @@
+head 
+    title Séries
+    style 
+        include estilo.css
+
+body
+
+    header
+
+        .capa 
+            img(src=fotoBg)
+
+            .poster
+                img(src=fotoPoster)
+
+                .info
+                    h1 #{nome}
+                    .generos #{generos}
+                    h3 Sinopse 
+                    p #{resumo} 
+                    .nota #{nota}
+
+        
+        //div.fundo 
+            //img(src=fotoBg)
+
+        //div(style=`background-image: url(${src=fotoBg}`)
+
+.elenco 
+    h2 Elenco da Série 
+    .elenco-container       
+        
+        each pessoa in elenco
+            .ator
+                img(src=pessoa.foto) 
+                .nome #{pessoa.nome} 
+                .personagem #{pessoa.personagem}
+
+.temporadas 
+    h2 Temporadas 
+    .temporadas-container 
+        .temporada
+            each item in temporadas 
+                .poster
+                    img(src=item.poster) 
+                    .info 
+                        h3 Temporada #{item.numero}
+                        .subtitulo #{item.exibicao} | Episódios: #{item.numero_episodios} 
+                        p.sinopse #{item.resumo}
+                        .episodios
+                    each ep in item.episodios
+                        .foto 
+                        img(src=ep.foto)
+                        .info 
+                            h4 #{ep.numero} | #{ep.nome}
+                            p #{ep.resumo}
+
+
+                
+
+
+    //div.fundo
+        //background-image: img(src="https://www.themoviedb.org/t/p//original/56v2KjBlU4XaOv9rVYEQypROD7P.jpg", alt="Imagem de fundo")
+
+    //div(style=background-image: url ${../src/bd_st.fotoBg} )
+
+    //div(style=background-image url ${../src/bd_st.fotoBg})
+
+    // div(style=background-image:url(#{require("../src/bd_st.fotoBg")}))
+
+        //img(style=background-image:`url("${../src/bd_st.fotoBg}")`})
+
+        //div.fundo 
+            //img(src=fotoBg)
+
+    //img(src=fotoPoster)
+
+    //h1#titulo Nome da Série: #{nome} 
+
+    //h3.genero Gêneros:
+    //ul 
+        //each genero in generos
+            //li= genero
+    
+    //h3 Sinopse:
+    //p#resumo #{resumo}
+
+    //h3 Nota:
+    //p#nota #{nota}
+
+
+    //h3#Episodios Número de Episódios: #{num_episodios}
+
+    //h3#Temporadas Número de Temporadas: #{num_temporadas}
+
+
+    //h2#Elenco Elenco
+    //ul 
+        each pessoa in elenco
+            li= 'Nome: ' + pessoa.nome + ', Personagem: ' + pessoa.personagem
+            
+            li
+                img(src=pessoa.foto)
+
+    //img(src=fotoBg)
+
+
+            
